@@ -1,0 +1,126 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+//google services
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    namespace 'com.mytrip.myindiatrip'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.mytrip.myindiatrip"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    //binding
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+
+    //  Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // Add the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //firebase in store
+    implementation 'com.google.firebase:firebase-storage:20.2.0'
+
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+
+    //google Logine
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+
+    //facebook login
+    implementation 'com.facebook.android:facebook-login:latest.release'
+
+
+    //ssp
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+//   Lottie animation
+    def lottieVersion = "5.2.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    //Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //    ShapebleImageView
+    implementation 'com.google.android.material:material:1.8.0'
+
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //Navigation Architecture Component
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.21'
+
+// dependency for slider view
+    implementation("com.tbuonomo:dotsindicator:4.3")
+
+
+//    Current Location
+//    implementation 'com.google.android.gms:play-services-location:21.0.1'
+//    implementation 'com.akexorcist:google-direction-library:1.2.1'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+
+    // Material Components for Android
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'com.github.ImaginativeShohag:Oops-No-Internet:v1.1.2'
+
+//Razor pay
+    implementation 'com.razorpay:checkout:1.6.26'
+
+    // Google admob
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+}

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F6F8"
+    android:orientation="vertical"
+    tools:context=".activity.CreateAccountActivity">
+
+
+    <!--    Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgUserDp"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_image"
+                app:shapeAppearanceOverlay="@style/roundedImageStyle" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChooseImage"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="choose image"
+                    android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:hint="First Name"
+                    app:boxStrokeColor="@color/black"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/black"
+                    app:shapeAppearance="@style/Rounded">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFirstC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:hint="Last Name"
+                    app:boxStrokeColor="@color/black"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/black"
+                    app:shapeAppearance="@style/Rounded">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtLastNameC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:hint="Email"
+                app:boxStrokeColor="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/black"
+                app:shapeAppearance="@style/Rounded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmailC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:hint="Password"
+                app:boxStrokeColor="@color/black"
+                app:endIconCheckable="false"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/black"
+                app:shapeAppearance="@style/Rounded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPasswordC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

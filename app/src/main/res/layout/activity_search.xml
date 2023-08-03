@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F6F8"
+    tools:context=".activity.SearchActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imgBackSearch"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <EditText
+            android:id="@+id/edtSearchText"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_trip_search"
+            android:hint="Search Place,Hotel,etc "
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="@dimen/_5sdp"
+            app:endIconMode="clear_text" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:src="@drawable/search6" />
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDC9C9" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcvSearchPlace"/>
+</LinearLayout>

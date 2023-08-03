@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1072132858786",
+    "project_id": "my-india-trip",
+    "storage_bucket": "my-india-trip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072132858786:android:4597d9397949e740c0c8fb",
+        "android_client_info": {
+          "package_name": "com.mytrip.myindiatrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072132858786-f47pr195b896hpn8kheahl5h18pa3ool.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mytrip.myindiatrip",
+            "certificate_hash": "16283ac3a486db88d6e68ba358f89e327fb23b3c"
+          }
+        },
+        {
+          "client_id": "1072132858786-0b2uq1m4i9lls6s6vipi8r9t0nma90lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDucelV78-XDKybd7S_VtLSxNJFgqcxEwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072132858786-0b2uq1m4i9lls6s6vipi8r9t0nma90lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

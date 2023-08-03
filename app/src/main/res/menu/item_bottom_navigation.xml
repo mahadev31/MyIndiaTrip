@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_bottom"
+        android:icon="@drawable/home3"
+        android:title="Home"
+        app:cnb_backgroundColor="@color/black"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+    <item
+        android:id="@+id/myTrip_bottom"
+        android:icon="@drawable/my_trip"
+        android:title="My Trip Plan"
+        app:cnb_backgroundColor="@color/black"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+    <item
+        android:id="@+id/save_bottom"
+        android:icon="@drawable/save"
+        android:title="Save"
+        app:cnb_backgroundColor="@color/black"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/profile_bottom"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        app:cnb_backgroundColor="@color/black"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+</menu>

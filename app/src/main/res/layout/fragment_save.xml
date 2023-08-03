@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F6F8"
+    android:layout_height="match_parent">
+
+    <!--    Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDC9C9" />
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@color/white"-->
+<!--        app:tabIndicatorColor="@color/black"-->
+<!--        app:tabTextColor="@color/black"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNoSave"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15ssp"
+        android:text="You Have No Post Save"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_50sdp"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rcvSaveList"/>
+</LinearLayout>
